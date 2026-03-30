@@ -11,7 +11,7 @@ import sys
 print("Welcome to Python programming!")
 # Variable declaration = A container for storing data values (string , integer , float , boolean)
 #--------------------------------- 10 Sep 2025 ---------------------------------
-'''
+
 #String
 first_name = "Vinodh"
 food = "Biryani"
@@ -1773,7 +1773,7 @@ def main():
 if __name__=="__main__":
     main()
 
-'''
+
 # End of the program
 print("Thank you for using the Python program. Goodbye!")
 

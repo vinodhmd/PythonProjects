@@ -1,0 +1,119 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background: #0f172a;
+            color: #f1f5f9;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 50px;
+            width: 1400px;
+        }
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+            font-size: 3em;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .card {
+            background: #1e293b;
+            border-top: 5px solid #38bdf8;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        }
+        .card h2 {
+            color: #e2e8f0;
+            margin-top: 0;
+            font-size: 1.5em;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 15px;
+        }
+        .card ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        .card li {
+            margin-bottom: 12px;
+            line-height: 1.5;
+            font-size: 1.1em;
+            color: #cbd5e1;
+        }
+        code {
+            background: #0f172a;
+            color: #fcd34d;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            font-size: 0.9em;
+        }
+        strong {
+            color: #f8fafc;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>🐍 Python Mastery: Feature Cheat Sheet</h1>
+        <div class="grid" id="grid-container">
+            <!-- The markdown needs to be split into cards. Let's do a simple split -->
+            <div class="card"><h2>1. Basics &amp; Data Types</h2>
+<ul>
+<li><strong>Variables</strong>: Containers for storing data (<code>int</code>, <code>float</code>, <code>str</code>, <code>bool</code>).</li>
+<li><strong>Typecasting</strong>: Converting one data type to another (e.g., <code>int("10")</code>, <code>str(10)</code>, <code>float(10)</code>).</li>
+<li><strong>Format Specifiers</strong>: Using f-strings (<code>f"Hello {name}"</code>) or format modifiers (<code>f"{value:.2f}"</code>) to inject variables into strings.</li>
+</ul>
+</div><div class="card"><h2>2. Operators &amp; Math</h2>
+<ul>
+<li><strong>Arithmetic</strong>: <code>+</code> (add), <code>-</code> (subtract), <code>*</code> (multiply), <code>/</code> (divide), <code>//</code> (floor division), <code>%</code> (modulo), <code>**</code> (exponent).</li>
+<li><strong>Logical</strong>: <code>and</code>, <code>or</code>, <code>not</code> Used to combine conditional statements.</li>
+<li><strong>Membership</strong>: <code>in</code>, <code>not in</code> Used to check if a sequence is present in an object.</li>
+<li><strong>Math Module</strong>: Import <code>math</code> for advanced mathematical operations (<code>math.pi</code>, <code>math.sqrt()</code>, <code>math.ceil()</code>).</li>
+<li><strong>Random Module</strong>: Import <code>random</code> for random number generation (<code>random.randint()</code>, <code>random.choice()</code>).</li>
+</ul>
+</div><div class="card"><h2>3. Control Flow</h2>
+<ul>
+<li><strong>If Conditionals</strong>: <code>if</code>, <code>elif</code>, <code>else</code> Used for decision making.</li>
+<li><strong>While Loops</strong>: Execute a block of statements repeatedly as long as a condition is true.</li>
+<li><strong>For Loops</strong>: Iterate over a sequence (list, tuple, dictionary, set, or string).</li>
+</ul>
+</div><div class="card"><h2>4. Collections</h2>
+<ul>
+<li><strong>Lists (<code>[]</code>)</strong>: Ordered, mutable collections of items. Can contain duplicates.</li>
+<li><strong>Dictionaries (<code>{k: v}</code>)</strong>: Ordered (in modern Python), mutable collections of key-value pairs. Keys must be unique.</li>
+<li><strong>Strings</strong>: Ordered, immutable sequences of characters. Supports highly useful methods like <code>.upper()</code>, <code>.replace()</code>, <code>.split()</code>.</li>
+</ul>
+</div><div class="card"><h2>5. Functions &amp; Advanced Concepts</h2>
+<ul>
+<li><strong>Functions (<code>def</code>)</strong>: Reusable blocks of code that run when called. Can take arguments and return values.</li>
+<li><strong>Keyword Arguments</strong>: Identifying function arguments by their parameter name <code>func(name="Alice")</code> rather than position.</li>
+<li><strong>Iterators &amp; Iterables</strong>: Objects that can be iterated upon. An iterable (like a list) contains an <code>__iter__()</code> method, which returns an iterator.</li>
+<li><strong>Modules</strong>: Code libraries (a file containing Python code) that you can include in your project using <code>import</code>.</li>
+</ul>
+</div><div class="card"><h2>6. Scope &amp; Object-Oriented Principles</h2>
+<ul>
+<li><strong>LEGB Scope Rule</strong>: The order Python resolves variables:</li>
+<li><strong>L</strong>ocal: Inside the current function.</li>
+<li><strong>E</strong>nclosing: Inside enclosing functions.</li>
+<li><strong>G</strong>lobal: At the top level of a module.</li>
+<li><strong>B</strong>uilt-in: Predefined Python names.</li>
+<li><strong>Static Methods</strong>: Bound to the class and not the object (<code>@staticmethod</code>). Doesn't require a <code>self</code> parameter.</li>
+<li><strong>Extending/Inheritance</strong>: Allowing one class to inherit the properties and methods of another.</li>
+</ul>
+</div><div class="card"><h2>7. Concurrency</h2>
+<ul>
+<li><strong>Threading</strong>: Using the <code>threading</code> module (<code>threading.Thread(target=func)</code>) to run code concurrently to improve execution time of I/O bound tasks.</li>
+</ul></div>
+        </div>
+    </body>
+    </html>
+    
